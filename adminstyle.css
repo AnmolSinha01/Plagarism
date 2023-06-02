@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+.box{
+    position: relative;
+}
+
+.box .square{
+    position: absolute;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 35px 50px rgb(0,0,0,0.1);
+    border: 1px solid rgb(255,255,255,0.5);
+    border-right: 1px solid rgb(255,255,255,0.2);
+    border-bottom: 1px solid rgb(255,255,255,0.2);
+    background: rgb(255,255,255,0.1);
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes animate{
+    0%,100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+}
+
+.box .square:nth-child(1){
+    top: 10px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.box .square:nth-child(2){
+    top: 30px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+.box .square:nth-child(3){
+    bottom: -20px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.box .square:nth-child(4){
+    bottom: -110px;
+    left: 100px;
+    width: 100px;
+    height: 50px;
+    /* z-index: 2; */
+}
+
+.box .square:nth-child(5){
+    top: -80px;
+    left: 100px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+}
+.box .square:nth-child(6){
+    bottom: -90px;
+    left: -80px;
+    width: 120px;
+    height: 120px;
+    /* z-index: 2; */
+}
+
+/* check first */
+/* .center-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+/* .container{
+    background:lightseagreen;
+    
+} */
+/* 
+.background{
+    background:lightgray} */
+
+.heading{
+    width: 100%;
+    line-height: 80px;
+    font-size: 1.8rem;
+    background:-webkit-linear-gradient(left, #0072ff, #8811c5);
+    font-family: 'Poppins', serif;
+}
+
+form{
+    width: 600px; 
+}
+
+.form-box{
+    width: 700px;
+    /* background: rgba(0,0,0,0.8); */
+    margin: 25%;
+    padding: 70px 0;
+    color:#000;
+    
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    /* For border curve */
+    border-radius: 20px;
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color:#8a2435;
+    font-weight: 700;
+}
+.input-box{
+    /* position: center; */
+    margin: 34px auto;
+    width: 90%;
+    border-bottom: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 9%;
+}
+.input-box input{
+    width: 90%;
+    border:  none;
+    outline: none;
+    background: transparent;
+    color: #000;
+    /* padding-left: 50%; */
+}
+::placeholder{
+    color: #000; 
+}
+.fa{
+    margin-right: 10px;
+}
+.eye{
+    position: absolute;
+}
+#hide1{
+    display: none;
+}
+/* .login-btn{
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+} */
+
+#btn1{
+    margin: 40px auto 20px;
+    width: 50%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+#btn2{
+    margin: 40px auto 20px;
+    width: 50%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}

@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px;  
+}
+.cont { 
+    position: relative;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 280px);
+    min-height: 600px;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    /* For border curve */
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+header {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    text-transform: capitalize;
+}
+header .logo {
+    color: #8a2435;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+}
+header .logo img {
+    max-width: 190px;
+    /* padding: -20px; */
+    margin-bottom: -30px;
+    margin-left: 10px;
+    margin-top: -40px;
+
+}
+header ul {
+    display: flex;
+}
+header ul li {
+    list-style: none;
+    margin: 0 10px;
+} 
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #8a2435;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+/* .head{
+    background: rgb(127, 195, 250);
+    border-radius: 10px;
+    padding: 1px;
+    margin-bottom:10px ;
+    } */
+    
+    .a{
+        color: #8a2435;
+        margin: 20px 5px;
+       /*  max-width: 95%;
+        background: rgba(255,255,255,0.2);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255,255,255,0.25);
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.5);
+        text-transform: capitalize;
+        padding: 1px;
+        margin-bottom: 20px; */
+        transform: translateX(-100px);
+        max-width: 4000px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.25);
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.5);
+        /* padding: 40px; */
+        padding: 10px;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .a h2 {
+        margin-top: 20px;
+        padding: 20px;
+        margin-left: 60px;
+        color: #8a2435;
+        font-size: 35px;
+    }
+    .a p {
+        padding: 30px;
+        color: #8a2435;
+        font-size: 1.3rem;
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+    .b{
+        /* background: rgb(130, 238, 171); */
+        border-radius: 10px;
+        margin-left: 30px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .b textarea {
+        max-height: 130px;
+        max-width: 1000px;
+        text-align: space-between;
+        margin-left: 25px;
+    }
+    .b label {
+        font-size: 30px;
+        font-weight: bold;
+        color: #8a2435;
+        font-family: 'Poppins', sans-serif;
+    }
+    .c{
+        /* background: rgb(238, 190, 119); */
+        position: relative;
+        padding: 20px;
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        /* border-radius: 1px;
+        margin-left: 100%;
+        padding: 20px; */  
+    }
+    .c label {
+        font-size: 30px;
+        color: #8a2435;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+    .c textarea {
+        max-height: 130px;
+        max-width: 1000px;
+        text-align: space-between;
+        margin-left: 25px;
+    
+    }
+    .btn input {
+        /* padding: 15px;
+        font-weight: bold;
+        position: relative;
+        margin-left: 100px;
+        max-width: 400px; */
+        width: 100%;
+        background: #8a2435;
+        color: #fff;
+        max-width: 150px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 200px;
+        font-weight: 800;
+        border: black;
+        border-width: 5px;
+        outline: none;
+        padding: 15px;
+        border-radius: 35px;
+        letter-spacing: 1.5px;
+        transition: .5s ease-in-out;
+    }
+    .btn input:hover {
+        background: rgba(255,255,255,0.2);
+        color: #000;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        border: black;
+        border-width: 5px;
+        font-weight: 800;
+    }
+    /* .dev{
+        text-align: right;
+        color: white;
+        font-size: 10px;
+    } */
+    .result{
+        transform: translateX(-100px);
+        /* background-color: violet; */
+        position: relative;
+        /* top: -40px;
+        right: 20px;
+        left: 20px; */
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        border-radius: 10px;
+        /* margin-left:10px; */
+        background: rgba(255,255,255,0.2);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.25);
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.5);
+        text-transform: capitalize;
+    }
+    .result h3 {
+        font-size: 25px;
+        color: #8a2435;
+        font-family: 'Poppins', sans-serif;
+    }
+.imgBx 
+{
+    cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        width: 30px;
+        margin-top: 300px;
+        margin-right: -100px; 
+        /* margin-bottom: 40px; */
+}
+.imgBx img 
+{
+        max-width: 800px;
+        animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(-100px);
+    }
+}
+@media (max-width: 1200px) 
+{
+    .cont
+    {
+        position: relative;
+        width: 100% - 20px;
+    }
+}
+@media (max-width: 992px)
+{
+    section
+    {
+        padding: 50px 10px 10px;
+    }
+    header 
+    {
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        top: -60px;
+        right: 0;
+        left: 0;
+        padding: 10px;
+    }
+    header ul
+    {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header ul li
+    {
+        margin: 2px;
+    }
+    header ul li a
+    {
+        display: inline-block;
+    }
+    .imgBx
+    {
+        margin-bottom: 50px;
+    }
+    @keyframes animate {
+        0%
+        {
+            transform: translateY(-20px);
+        }
+        50%
+        {
+            transform: translateY(20px);
+        }
+    }
+}
+@media (max-width:600px)
+{
+    .content h2
+    {
+        font-size: 1.5rem;
+        color: #8a2435;
+    }
+    .content p 
+    {
+        font-size: 1rem;
+        color: #8a2435;   
+    }
+    .imgBx img 
+    {
+        max-width: 300px;
+    }
+}
+.imgBx img:hover {
+    /* transition: all 0.3s ease-in-out 0s; */
+    animation: rotate-btn 5s linear 3;
+    -webkit-animation: rotate-btn 5s linear 3;
+}
+
+@keyframes rotate-btn {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+}
